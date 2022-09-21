@@ -4,6 +4,23 @@ This theme is based on top of mkdocs-basic-theme.
 
 https://github.com/mkdocs/mkdocs-basic-theme
 
+
+## Usage
+
+Install the theme
+
+```bash
+pip install mkdocs-manuals-theme
+```
+
+Use the theme in `mkdocs.yml`
+
+```yaml
+theme:
+    name: mkdocs-manuals-theme
+```
+
+
 ## Development
 
 Setting up dev environment:
