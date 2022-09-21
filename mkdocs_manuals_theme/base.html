@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
   <link rel="stylesheet" href="{{ "fontello/css/fontello.css"|url }}">
 
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
   {% for path in config.extra_css %}
     <link href="{{ path|url }}" rel="stylesheet">
   {% endfor %}
