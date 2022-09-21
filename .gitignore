@@ -3,3 +3,6 @@
 dist/
 build/
 site/
+.envrc
+.venv
+mkdocs_manuals_theme.egg-info/

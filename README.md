@@ -4,6 +4,18 @@ This theme is based on top of mkdocs-basic-theme.
 
 https://github.com/mkdocs/mkdocs-basic-theme
 
+## Development
+
+Setting up dev environment:
+
+```bash
+# create and activate virtual env
+python3 -m venv .venv
+source .venv/bin/activate
+
+# install requirements
+pip install '.[dev]'
+```
 
 ## Summary of understanding
 

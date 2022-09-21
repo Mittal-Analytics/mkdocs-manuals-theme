@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 version = "0.1.0"
-name = "Manuals Theme for mkdocs"
+name = "mkdocs-manuals-theme"
 description = "A theme for rendering manuals using mkdocs"
 readme = "README.md"
 authors = [{ name = "Mittal Analytics Pvt Ltd", email = "pratyush@hey.com" }]
