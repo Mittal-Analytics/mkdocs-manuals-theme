@@ -112,9 +112,11 @@
           {% for nav_item in nav %}
             {% if nav_item.active %}
               <li class="strong ink">Manual for {{ nav_item.title }}</li>
-              {% for nav_item in nav_item.children %}
-                {% include "parts/nav.html" %}
-              {% endfor %}
+              {% if nav_item.children %}
+                {% for nav_item in nav_item.children %}
+                  {% include "parts/nav.html" %}
+                {% endfor %}
+              {% endif %}
             {% endif %}
           {% endfor %}
         {% endif %}
