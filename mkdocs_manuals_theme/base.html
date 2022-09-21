@@ -103,17 +103,7 @@
 
     <nav class="mute">
       <ul style="margin-left: -16px;">
-        {% if page.is_homepage %}
-          <li class="strong ink">Manuals Available</li>
-          {% for nav_item in nav %}
-          {% if not nav_item == page %}
-            <li>
-              {% set nav_title = nav_item.title %}
-              {% include 'parts/nav_link.html' %}
-            </li>
-          {% endif %}
-          {% endfor %}
-        {% else %}
+        {% if page.parent %}
           {% for nav_item in nav %}
             {% if nav_item.active %}
               <li class="strong ink">Manual for {{ nav_item.title }}</li>
@@ -122,6 +112,16 @@
                   {% include "parts/nav.html" %}
                 {% endfor %}
               {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <li class="strong ink">Manuals Available</li>
+          {% for nav_item in nav %}
+            {% if not nav_item == page %}
+            <li>
+              {% set nav_title = nav_item.title %}
+              {% include 'parts/nav_link.html' %}
+            </li>
             {% endif %}
           {% endfor %}
         {% endif %}
