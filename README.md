@@ -17,7 +17,7 @@ Use the theme in `mkdocs.yml`
 
 ```yaml
 theme:
-    name: mkdocs-manuals-theme
+    name: manuals-theme
 ```
 
 
