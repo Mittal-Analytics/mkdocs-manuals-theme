@@ -13,10 +13,8 @@ dependencies = [
 ]
 requires-python = ">=3.7"
 
-[project.scripts]
-mkdocs.themes = [
-    "manuals-theme = mkdocs_manuals_theme"
-]
+[project.entry-points."mkdocs.themes"]
+manuals-theme = "mkdocs_manuals_theme"
 
 [project.optional-dependencies]
 dev = ["bumpver", "build", "twine"]
