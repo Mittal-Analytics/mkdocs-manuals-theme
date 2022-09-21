@@ -1,5 +1,5 @@
 {% if nav_item.is_page %}
-	<a href="{{ nav_item.url }}" {% if nav_item.is_active %}class="active"{% endif %}>
+	<a href="{{ nav_item.url|url }}" {% if nav_item.is_active %}class="active"{% endif %}>
 		{{ nav_title }}
 	</a>
 {% else %}

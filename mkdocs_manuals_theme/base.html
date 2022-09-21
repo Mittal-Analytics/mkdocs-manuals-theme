@@ -117,12 +117,10 @@
         {% else %}
           <li class="strong ink">Manuals Available</li>
           {% for nav_item in nav %}
-            {% if not nav_item == page %}
             <li>
               {% set nav_title = nav_item.title %}
               {% include 'parts/nav_link.html' %}
             </li>
-            {% endif %}
           {% endfor %}
         {% endif %}
       </ul>
